@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAA Expert Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for better aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D4AF37; /* Or */
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c29d2f; /* Darker Or on hover */
+      }
+      /* Ensure full height for main app container */
+      html, body, #root {
+        height: 100%;
+        margin: 0;
+        overflow: hidden; /* Prevent body scroll, let app handle it */
+      }
+
+      /* AI-style subtle gradient background with a faint pattern */
+      .ai-gradient-background {
+        background: 
+            radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.03) 1px, transparent 0px) repeat, /* Subtle dots */
+            linear-gradient(135deg, #f0f2f5 0%, #e0e4eb 100%); /* Light grey to very light blue-grey */
+        background-size: 15px 15px, cover; /* Size of the dots pattern, cover for the gradient */
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

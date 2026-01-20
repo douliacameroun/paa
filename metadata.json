@@ -1,0 +1,7 @@
+{
+  "name": "PAA Expert Consultant",
+  "description": "An expert AI consultant for Procure and Advisory Company (PAA), demonstrating superior procurement and advisory services through interactive service cards and an intelligent chatbot.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
